@@ -10,7 +10,7 @@ N/A
 Deployment: https://elthell.github.io/password-generator/
 
 Preview:
-![A white page with a textbox in the center labeled "Password Generator" and a red button saying "Generate Passoword underneath.]((https://github.com/elthell/password-generator/blob/main/assets/images/03-javascript-homework-demo.png?raw=true))
+![A white page with a textbox in the center labeled "Password Generator" and a red button saying "Generate Passoword underneath.](https://github.com/elthell/password-generator/blob/main/assets/images/03-javascript-homework-demo.png?raw=true)
 
 ## Credits
 
