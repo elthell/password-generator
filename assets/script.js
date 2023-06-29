@@ -31,12 +31,21 @@ function generatePassword() {
   let passwordLength = prompt("Please choose how long you would like the password to be:");
   // Require a password length b/w 8 and 128
   if (passwordLength < 8 || passwordLength > 128) {
-    prompt("Please choose a value between 8 and 128 characters.")
-  };
+    prompt("Please choose a value between 8 and 128 characters.");
+  // Require value for passwordLength
+  } else if (passwordLength == "") {
+    prompt("Please choose a value between 8 and 128 characters.");
+  }
   let inlcudeLowerCase = confirm("Do you want to include lowercase letters?");
   let includeUpperCase = confirm("Do you want to include uppercase letters?");
   let includeNumeric = confirm("Do you want to include numeric values?");
   let includeSpecial = confirm("Do you want to include special charaters?");
+
+  // If no confirms are selected, re prompt
+  if (!inlcudeLowerCase && !includeUpperCase && !includeNumeric && !includeSpecial) {
+    alert("Please restart and select at least one character type to include.");
+    generatePassword.close();
+  }
 
   //If a button is selected, add inclusions to password pool
   if (inlcudeLowerCase) {
